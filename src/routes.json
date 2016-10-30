@@ -1,0 +1,28 @@
+{
+  "root": "App",
+  "notFound": "NotFound",
+  "containers": "./containers",
+  "sections": {
+    "enthusiastic": [
+      {"path": "/enthusiastic/overview", "container": "enthusiastic/Overview"},
+      {"path": "/enthusiastic/exposure", "container": "enthusiastic/Exposure"},
+      {"path":"/enthusiastic/document", "container": "enthusiastic/Document", "child": [
+        {"path": "phase1", "container": "Phase1"},
+        {"path": "phase2", "container": "Phase2"}
+      ]}
+    ],
+    "artist": [
+      {"path": "/artist/overview", "container": "artist/Overview"},
+      {"path": "/artist/exposure", "container": "artist/Exposure"},
+      {"path":"/artist/document", "container": "artist/Document", "child": [
+        {"path": "phase1", "container": "Phase1"},
+        {"path": "phase2", "container": "Phase2"}
+      ]}
+    ],
+    "admin": [
+      {"path": "/admin/import", "container": "admin/Import"},
+      {"path": "/admin/update", "container": "admin/Update"},
+      {"path": "/admin/bulk", "container": "admin/Bulk"}
+    ]
+  }
+}
